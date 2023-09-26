@@ -77,13 +77,17 @@ dependencies {
     implementation(libs.ui)
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
+    //Navigation
+    implementation(libs.navigation.compose)
     //Material
     implementation(libs.material3)
-    //DI
+    //Koin
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.androidx.compose.navigation)
     implementation(libs.koin.ktor)
     implementation(libs.koin.logger.slf4j)
+    //Coil
+    implementation(libs.coil)
     //Ktor
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.client.okhttp)
