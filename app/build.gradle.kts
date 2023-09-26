@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.ksp)
     //alias(libs.plugins.tracer)
 }
 
@@ -86,6 +87,11 @@ dependencies {
     //Ktor
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.client.okhttp)
+    //Room
+    annotationProcessor(libs.room.compiler)
+    ksp(libs.room.compiler)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
     //Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
